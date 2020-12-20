@@ -1,0 +1,11 @@
+syntax = 'proto3';
+
+import "google/protobuf/timestamp.proto";
+package protobufcompatibility;
+option go_package = "proto;protobufcompatibility";
+
+message MyMessage {
+    string ID = 1;
+    bytes rawContent = 2;
+    google.protobuf.Timestamp timestamp = 3;
+}
