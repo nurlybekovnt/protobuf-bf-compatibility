@@ -8,4 +8,5 @@ message MyMessage {
     string ID = 1;
     bytes rawContent = 2;
     google.protobuf.Timestamp timestamp = 3;
+    uint64 counter = 4;
 }
