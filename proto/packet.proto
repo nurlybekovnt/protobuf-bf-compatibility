@@ -6,7 +6,7 @@ option go_package = "proto;protobufcompatibility";
 
 message MyMessage {
     string ID = 1;
-    bytes rawContent = 2;
+    bytes rawContent = 2 [deprecated = true];
     google.protobuf.Timestamp timestamp = 3;
     uint64 counter = 4;
 }
